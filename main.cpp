@@ -177,7 +177,12 @@ int main(){
                            cin>>licz;
                            cout<<"mian: ";
                            cin>>mian;
-                           _p[i][j] = licz/mian;
+                           if(mian==0){
+                                _p[i][j] = 0;
+                           }
+                           else{
+                                _p[i][j] = licz/mian;
+                           }
                            cout<<_p[i][j]<<endl;
                        }
                    }
